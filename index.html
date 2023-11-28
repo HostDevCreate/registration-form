@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDC Franchise Member Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">IDC Franchise Member Registration Form</h2>
+
+    <form action="process_form.php" method="post">
+        <!-- Personal Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required>
+
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature" required>
+
+        <!-- Address Information -->
+        <label for="communicationAddress">Communication Address:</label>
+        <textarea id="communicationAddress" name="communicationAddress" rows="4" required></textarea>
+
+        <label for="businessAddress">Business Address:</label>
+        <textarea id="businessAddress" name="businessAddress" rows="4" required></textarea>
+
+        <!-- Business Operations Area -->
+        <h3>Business Operations Area:</h3>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required>
+      <label for="Block">Block:
+ </label>
+        <input type="text" id="Block" name="Block" required>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
